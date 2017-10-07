@@ -1,5 +1,5 @@
 import unittest
-from Binary_search import BinarySearch
+from binarySearch import binarySearch
 class ListComprehensionTest(unittest.TestCase):
 
     """Binary Search to traverse an ordered list, effectively
@@ -7,9 +7,9 @@ class ListComprehensionTest(unittest.TestCase):
     """
 
     def setUp(self):
-        self.one_to_twenty = BinarySearch(20, 1)
-        self.two_to_forty = BinarySearch(20, 2)
-        self.ten_to_thousand = BinarySearch(100, 10)
+        self.one_to_twenty = binarySearch(20, 1)
+        self.two_to_forty = binarySearch(20, 2)
+        self.ten_to_thousand = binarySearch(100, 10)
 
     def test_small_list(self):
         self.assertListEqual(
@@ -74,9 +74,9 @@ class BinarySearchTest(unittest.TestCase):
     """
 
     def setUp(self):
-        self.one_to_twenty = BinarySearch(20, 1)
-        self.two_to_forty = BinarySearch(20, 2)
-        self.ten_to_thousand = BinarySearch(100, 10)
+        self.one_to_twenty = binarySearch(20, 1)
+        self.two_to_forty = binarySearch(20, 2)
+        self.ten_to_thousand = binarySearch(100, 10)
 
     def test_small_list_search(self):
         search = self.one_to_twenty.search(16)
